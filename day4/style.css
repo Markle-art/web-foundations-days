@@ -1,0 +1,72 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --border-color: #cccccc;
+    --button-bg: #222222;
+    --button-text: #ffffff;
+    --warning-color: orange;
+    --over-color: red;
+}
+
+body.dark {
+    --bg-color: #222222;
+    --text-color: #ffffff;
+    --border-color: #555555;
+    --button-bg: #ffffff;
+    --button-text: #222222;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font: inherit;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 16px;
+    margin-top: 12px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    cursor: pointer;
+}
+
+.warning {
+    color: var(--warning-color);
+}
+
+.over {
+    color: var(--over-color);
+    font-weight: bold;
+}
